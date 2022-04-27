@@ -3,8 +3,7 @@ import os
 import discord
 from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = ""
+TOKEN = os.environ.get("TOKEN")
 
 client = discord.Client(intents=discord.Intents.all())
 
